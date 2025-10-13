@@ -12,7 +12,7 @@ type Body struct {
 	Data interface{} `json:"data,omitempty"`
 }
 
-func Response(w http.ResponseWriter, resp interface{}, err error) {
+func Response(r *http.Request, w http.ResponseWriter, resp interface{}, err error) {
 	body := &Body{
 		Code: 0,
 		Msg:  "OK",
