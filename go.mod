@@ -1,4 +1,4 @@
-module github.com/allen-ping/go-zero-response
+module github.com/allen-ping/go-zero-response/v3
 
 go 1.21
 
