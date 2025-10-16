@@ -20,7 +20,7 @@ func Response(r *http.Request, w http.ResponseWriter, resp interface{}, err erro
 	}
 
 	e := xerrors.FromError(err)
-	if err != nil {
+	if e != nil {
 		body.Code = e.Code
 		body.Message = e.Msg
 	}
